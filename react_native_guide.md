@@ -37,7 +37,7 @@ allprojects {
 android/app 폴더의 build.gradle에 다음과 같이 dependency를 추가합니다.
 ```gradle
 dependencies {
-    implementation 'com.tnkfactory:tnk_rwd_sdk:8.06.15'
+    implementation 'com.tnkfactory:rwd:8.06.15'
 }
 ```
 
