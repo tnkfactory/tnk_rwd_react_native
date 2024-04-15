@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 동영상 광고 재생을 위한 wifi접근 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 광고 아이디 획득 -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 
     <application
       android:name=".MainApplication"
@@ -21,7 +25,6 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
-
         <activity
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:name="com.tnkfactory.ad.AdWallActivity"

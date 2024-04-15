@@ -13,9 +13,9 @@ import {
   StatusBar,
   StyleSheet,
   Text,
+  Button,
   useColorScheme,
   View,
-  Button,
   NativeModules,
 } from 'react-native';
 
@@ -89,6 +89,10 @@ function App(): React.JSX.Element {
                 ReactWrapperModule.showOfferwallWithAtt();
               }}
             />
+          </Section>
+          <Section title="Step One">
+            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+            screen and then come back to see your edits.
           </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this

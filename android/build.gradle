@@ -22,4 +22,5 @@ allprojects {
         maven { url 'https://repository.tnkad.net:8443/repository/public/' }
     }
 }
+
 apply plugin: "com.facebook.react.rootproject"

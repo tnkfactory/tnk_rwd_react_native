@@ -12,10 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4F49FB372BC935D4005F8BD7 /* TnkRwdSdk2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49FB352BC935CB005F8BD7 /* TnkRwdSdk2.xcframework */; };
-		4F49FB382BC935D4005F8BD7 /* TnkRwdSdk2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49FB352BC935CB005F8BD7 /* TnkRwdSdk2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F49FB3C2BC935F0005F8BD7 /* ReactWrapperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FB3B2BC935F0005F8BD7 /* ReactWrapperModule.swift */; };
-		4F49FB3F2BC93637005F8BD7 /* ReactWrapperModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FB3E2BC93637005F8BD7 /* ReactWrapperModule.m */; };
+		4F49FB222BC92A48005F8BD7 /* ReactWrapperModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FB212BC92A48005F8BD7 /* ReactWrapperModule.m */; };
+		4F49FB262BC92AB9005F8BD7 /* ReactWrapperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FB252BC92AB9005F8BD7 /* ReactWrapperModule.swift */; };
+		4F49FB272BC92B46005F8BD7 /* TnkRwdSdk2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49FB1E2BC92A04005F8BD7 /* TnkRwdSdk2.xcframework */; };
+		4F49FB282BC92B46005F8BD7 /* TnkRwdSdk2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49FB1E2BC92A04005F8BD7 /* TnkRwdSdk2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7699B88040F8A987B510C191 /* libPods-tnk_rwd_rn-tnk_rwd_rnTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-tnk_rwd_rn-tnk_rwd_rnTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -31,13 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4F49FB392BC935D4005F8BD7 /* Embed Frameworks */ = {
+		4F49FB292BC92B46005F8BD7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F49FB382BC935D4005F8BD7 /* TnkRwdSdk2.xcframework in Embed Frameworks */,
+				4F49FB282BC92B46005F8BD7 /* TnkRwdSdk2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,11 +56,11 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = tnk_rwd_rn/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-tnk_rwd_rn-tnk_rwd_rnTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tnk_rwd_rn-tnk_rwd_rnTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-tnk_rwd_rn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tnk_rwd_rn.debug.xcconfig"; path = "Target Support Files/Pods-tnk_rwd_rn/Pods-tnk_rwd_rn.debug.xcconfig"; sourceTree = "<group>"; };
-		4F49FB352BC935CB005F8BD7 /* TnkRwdSdk2.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:GVMWG8Q7H5:TnK Factory"; lastKnownFileType = wrapper.xcframework; path = TnkRwdSdk2.xcframework; sourceTree = "<group>"; };
-		4F49FB3A2BC935F0005F8BD7 /* tnk_rwd_rn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tnk_rwd_rn-Bridging-Header.h"; sourceTree = "<group>"; };
-		4F49FB3B2BC935F0005F8BD7 /* ReactWrapperModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactWrapperModule.swift; sourceTree = "<group>"; };
-		4F49FB3D2BC93637005F8BD7 /* ReactWrapperModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactWrapperModule.h; sourceTree = "<group>"; };
-		4F49FB3E2BC93637005F8BD7 /* ReactWrapperModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactWrapperModule.m; sourceTree = "<group>"; };
+		4F49FB1E2BC92A04005F8BD7 /* TnkRwdSdk2.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:GVMWG8Q7H5:TnK Factory"; lastKnownFileType = wrapper.xcframework; path = TnkRwdSdk2.xcframework; sourceTree = "<group>"; };
+		4F49FB212BC92A48005F8BD7 /* ReactWrapperModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactWrapperModule.m; sourceTree = "<group>"; };
+		4F49FB232BC92A8A005F8BD7 /* ReactWrapperModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactWrapperModule.h; sourceTree = "<group>"; };
+		4F49FB242BC92AB9005F8BD7 /* tnk_rwd_rn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tnk_rwd_rn-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F49FB252BC92AB9005F8BD7 /* ReactWrapperModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactWrapperModule.swift; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-tnk_rwd_rn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tnk_rwd_rn.release.xcconfig"; path = "Target Support Files/Pods-tnk_rwd_rn/Pods-tnk_rwd_rn.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-tnk_rwd_rn-tnk_rwd_rnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tnk_rwd_rn-tnk_rwd_rnTests.debug.xcconfig"; path = "Target Support Files/Pods-tnk_rwd_rn-tnk_rwd_rnTests/Pods-tnk_rwd_rn-tnk_rwd_rnTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-tnk_rwd_rn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tnk_rwd_rn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-tnk_rwd_rn.a in Frameworks */,
-				4F49FB372BC935D4005F8BD7 /* TnkRwdSdk2.xcframework in Frameworks */,
+				4F49FB272BC92B46005F8BD7 /* TnkRwdSdk2.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,15 +111,15 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				4F49FB3B2BC935F0005F8BD7 /* ReactWrapperModule.swift */,
-				4F49FB3D2BC93637005F8BD7 /* ReactWrapperModule.h */,
-				4F49FB3E2BC93637005F8BD7 /* ReactWrapperModule.m */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				4F49FB3A2BC935F0005F8BD7 /* tnk_rwd_rn-Bridging-Header.h */,
+				4F49FB212BC92A48005F8BD7 /* ReactWrapperModule.m */,
+				4F49FB232BC92A8A005F8BD7 /* ReactWrapperModule.h */,
+				4F49FB252BC92AB9005F8BD7 /* ReactWrapperModule.swift */,
+				4F49FB242BC92AB9005F8BD7 /* tnk_rwd_rn-Bridging-Header.h */,
 			);
 			name = tnk_rwd_rn;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				4F49FB352BC935CB005F8BD7 /* TnkRwdSdk2.xcframework */,
+				4F49FB1E2BC92A04005F8BD7 /* TnkRwdSdk2.xcframework */,
 				13B07FAE1A68108700A75B9A /* tnk_rwd_rn */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* tnk_rwd_rnTests */,
@@ -212,7 +212,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				4F49FB392BC935D4005F8BD7 /* Embed Frameworks */,
+				4F49FB292BC92B46005F8BD7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +241,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "tnk_rwd_rn" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -422,9 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F49FB3C2BC935F0005F8BD7 /* ReactWrapperModule.swift in Sources */,
-				4F49FB3F2BC93637005F8BD7 /* ReactWrapperModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				4F49FB262BC92AB9005F8BD7 /* ReactWrapperModule.swift in Sources */,
+				4F49FB222BC92A48005F8BD7 /* ReactWrapperModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
