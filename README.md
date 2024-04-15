@@ -18,12 +18,12 @@ React Native 에서 Tnk 보상형 광고를 sdk bridge를 통해 사용하는 �
 ## Android
 
 안드로이드 SDK가이드 
-[안드로이드 가이드 문서](./react_native_guide)
+[안드로이드 가이드 문서](https://github.com/tnkfactory/tnk_sdk_rwd_br/blob/main/Android_Guide.md)
 
 ## iOS
 
 iOS SDK가이드
-[iOS 가이드 문서](./iOS_Guide.md)
+[iOS 가이드 문서](https://github.com/tnkfactory/ios-sdk-rwd2/blob/main/iOS_Guide.md)
 
 
 
