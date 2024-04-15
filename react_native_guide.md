@@ -42,6 +42,9 @@ dependencies {
 ```
 
 androidManefest.xml에 다음과 같이 권한을 추가합니다.
+#### 권한 설정
+
+아래와 같이 권한 사용을 추가합니다.
 ```xml
 <!-- 인터넷 -->
 <uses-permission android:name="android.permission.INTERNET" />
@@ -51,22 +54,85 @@ androidManefest.xml에 다음과 같이 권한을 추가합니다.
 <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
 ```
 
-activity와 tnk_app_id를 추가합니다.([app_id](https://github.com/tnkfactory/tnk_sdk_rwd_br/blob/main/publish_setting.md))
-```xml
-<activity
-    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-    android:name="com.tnkfactory.ad.AdWallActivity"
-    android:screenOrientation="portrait"
-    android:exported="true"
-    android:windowSoftInputMode="adjustResize"/>
+#### Application ID 설정하기
 
-<meta-data
-android:name="tnkad_app_id"
-android:value="your-app-id"/>
+Tnk 사이트에서 앱 등록하면 상단에 App ID 가 나타납니다. 이를 AndroidMenifest.xml 파일의 application tag 안에 아래와 같이 설정합니다.
+(*your-application-id-from-tnk-site* 부분을 실제 App ID 값으로 변경하세요.)
+
+
+```xml
+<application>
+
+    <meta-data android:name="tnkad_app_id" android:value="your-application-id-from-tnk-site" />
+
+</application>
 ```
+
+
+
+#### Activity tag 추가하기
+
+광고 목록을 띄우기 위한 Activity를 <activity/>로 아래와 같이 설정합니다. 
+
+```xml
+<activity android:name="com.tnkfactory.ad.AdWallActivity" android:exported="true" android:screenOrientation="portrait"/>
+```
+
+AndroidManifest.xml의 내용 예시 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tnkfactory.tnkofferer">
+
+    // 인터넷
+    <uses-permission android:name="android.permission.INTERNET" />
+    // 동영상 광고 재생을 위한 wifi접근
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    // 광고 아이디 획득
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    // 기타 앱에서 사용하는 권한
+    //...
+    //...
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        ...
+        ...
+        <activity android:name="com.tnkfactory.ad.AdWallActivity" android:exported="true" android:screenOrientation="portrait"/>
+        ...
+        ...
+        <!-- App ID -->
+        <meta-data
+            android:name="tnkad_app_id"
+            android:value="30408070-4051-9322-2239-15040708030f" />
+        ...
+        ...
+    </application>
+</manifest>
+```
+	
+
+#### Proguard 사용
+
+Proguard를 사용하실 경우 Proguard 설정내에 아래 내용을 반드시 넣어주세요.
+
+```
+-keep class com.tnkfactory.** { *;}
+```
+
+
+####  ReactWrapperModule 추가하기
+
 android/app/src/ 하위 폴더에 ReactWrapperModule.kt, ReactWrapperPackage.kt 파일을 추가합니다.
 
-[ReactWrapperModule.kt](android%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftnk_rwd_rn%2FReactWrapperModule.kt),
+[ReactWrapperModule.kt](android%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftnk_rwd_rn%2FReactWrapperModule.kt)
 
 [ReactWrapperPackage.kt](android%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftnk_rwd_rn%2FReactWrapperPackage.kt)
 
