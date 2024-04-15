@@ -149,7 +149,7 @@ add(ReactWrapperPackage())
 다음과 같이 입력해서 앱을 실행합니다.
 (실행 후 'a'를 입력해서 안드로이드로 실행 하도록 합니다.)
 ```bash
-nmp start
+npm start
 ``` 
 
 
