@@ -7,8 +7,9 @@
 
 #import "ReactWrapperModule.h"
 #import "React/RCTBridgeModule.h"
+#import "React/RCTEventEmitter.h"
 
-@interface RCT_EXTERN_MODULE(ReactWrapperModule, NSObject)
+@interface RCT_EXTERN_MODULE(ReactWrapperModule, RCTEventEmitter)
 RCT_EXTERN_METHOD(simpleMethod)
 RCT_EXTERN_METHOD(showAttPopup)
 RCT_EXTERN_METHOD(simpleMethodReturns:(RCTResponseSenderBlock) callback)

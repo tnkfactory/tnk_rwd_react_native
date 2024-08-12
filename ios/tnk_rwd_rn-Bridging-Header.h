@@ -8,5 +8,5 @@
 #ifndef tnk_rwd_rn_Bridging_Header_h
 #define tnk_rwd_rn_Bridging_Header_h
 #import <React/RCTBridgeModule.h>
-
+#import <React/RCTEventEmitter.h>
 #endif /* tnk_rwd_rn_Bridging_Header_h */

@@ -17,6 +17,7 @@ import {
   useColorScheme,
   View,
   NativeModules,
+  NativeEventEmitter,
 } from 'react-native';
 
 import {
@@ -63,6 +64,12 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  // 네이티브 이벤트 리스너 설정
+  const eventEmitter = new NativeEventEmitter(NativeModules.ReactWrapperModule);
+  eventEmitter.addListener('tnk_event', event => {
+    console.log(event); // "someValue"
+  });
+  // eventEmitter.removeAllListeners('tnk_event') // 리스너 삭제
 
   return (
     <SafeAreaView style={backgroundStyle}>

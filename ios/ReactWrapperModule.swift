@@ -8,8 +8,11 @@
 import Foundation
 import TnkRwdSdk2
 
-@objc(ReactWrapperModule) class ReactWrapperModule: NSObject {
-  @objc static func requiresMainQueueSetup() -> Bool { return true }
+@objc(ReactWrapperModule) class ReactWrapperModule: RCTEventEmitter, OfferwallEventListener {
+  // iOS는 함수 스텍이 끝나면 메모리를 해제하기 때문에 리스너를 static 처리
+  private let _callableJSModules = RCTCallableJSModules()
+  static var emitter: RCTEventEmitter?
+
   @objc public func simpleMethod() {
     print("tnk_rwd_test")
   }
@@ -121,6 +124,7 @@ import TnkRwdSdk2
     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
       let tnkOfferwall = AdOfferwallViewController()
       tnkOfferwall.title = "TEST Offerwall"
+      tnkOfferwall.offerwallListener = self
 
       let navController = UINavigationController(rootViewController: tnkOfferwall)
       navController.modalPresentationStyle = .fullScreen
@@ -132,5 +136,26 @@ import TnkRwdSdk2
         }
       }
     }
+  }
+  // tnkEventListener 구현
+  func didOfferwallRemoved(){
+    sendEvent(message:"tnk_event_offerwall_closed")
+  }
+
+  // eventEmitter 구현
+  private static let changeEvent = "tnk_event"
+
+  func sendEvent(message: String) {
+    Self.emitter?.sendEvent(withName: Self.changeEvent, body: ["name": message]/* ex: true, 5, "foo", [1, 2, 3] */)
+  }
+
+  override func startObserving() {
+    super.startObserving()
+    self.callableJSModules = _callableJSModules
+    self.callableJSModules.setBridge(self.bridge)
+    Self.emitter = self
+  }
+  override func supportedEvents() -> [String]! {
+    return [Self.changeEvent]
   }
 }
