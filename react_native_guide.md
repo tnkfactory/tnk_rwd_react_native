@@ -238,7 +238,7 @@ swift를 선택 후 ReactWrapperModule를 입력하여 ReactWrapperModule.swift 
 이때 자동으로 '프로젝트명-Bridging-Header.h' 파일을 생성 할 것인지 물어보는데 'Create Bridging Header'를 선택하여 파일을 생성합니다.
 
 같은 방법으로 프로젝트 폴더를 우클릭 하여 'New file'을 선택 - 'cocoaTouch class'를 선택 후 objective-c를 선택합니다.
-파일 이름은 ReactWrapperModuled으로 입력하면 ReactWrapperModule.m 파일과 ReactWrapperModule.h 파일이 생성됩니다.
+파일 이름은 ReactWrapperModule으로 입력하면 ReactWrapperModule.m 파일과 ReactWrapperModule.h 파일이 생성됩니다.
 
 '프로젝트명-Bridging-Header.h'파일에는 다음과 같이 RCTBridgeModule.h가 import되어야 합니다.
 #import <React/RCTBridgeModule.h>
