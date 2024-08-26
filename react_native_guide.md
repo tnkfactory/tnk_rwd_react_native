@@ -220,7 +220,8 @@ TnkSession.initInstance(appId: "your-app-id-from-tnk-site")
 
 ```objective-c
 // Objective-C
-#import <TnkRwdSdk2/TnkRwdSdk2.h>
+#import <WebKit/WebKit.h>
+#import "TnkRwdSdk2/TnkRwdSdk2-Swift.h"
 
 [TnkSession initInstanceWithAppId:@"your-app-id-from-tnk-site"];
 ```
