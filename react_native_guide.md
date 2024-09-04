@@ -242,7 +242,10 @@ swift를 선택 후 ReactWrapperModule를 입력하여 ReactWrapperModule.swift 
 파일 이름은 ReactWrapperModule으로 입력하면 ReactWrapperModule.m 파일과 ReactWrapperModule.h 파일이 생성됩니다.
 
 '프로젝트명-Bridging-Header.h'파일에는 다음과 같이 RCTBridgeModule.h가 import되어야 합니다.
+
+```objective-c
 #import <React/RCTBridgeModule.h>
+```
 
 아래 세개의 파일은 샘플코드에 있는 파일을 덮어쓰기 하시기 바랍니다.
 [ReactWrapperModule.h](ios%2FReactWrapperModule.h)
