@@ -243,7 +243,7 @@ swift를 선택 후 ReactWrapperModule를 입력하여 ReactWrapperModule.swift 
 
 '프로젝트명-Bridging-Header.h'파일에는 다음과 같이 RCTBridgeModule.h가 import되어야 합니다.
 
-[tnk_rwd_rn-Bridging-Header.h](ios%2tnk_rwd_rn-Bridging-Header.h) 참고
+[tnk_rwd_rn-Bridging-Header.h](ios%2Ftnk_rwd_rn-Bridging-Header.h) 참고
 
 ```objective-c
 #import <React/RCTBridgeModule.h>
