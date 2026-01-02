@@ -161,7 +161,7 @@ xcode 또는 appCode를 사용하여 ios 폴더의 프로젝트를 열고 편집
 
 ### 2.2.1 라이브러리 다운로드
 
-**[[iOS Reward SDK2 Download v5.47](https://github.com/tnkfactory/ios-sdk-rwd2/blob/main/sdk/TnkRwdSdk2.v5.47.zip)]**
+**[[iOS Reward SDK2 Download v5.83](https://github.com/tnkfactory/ios-sdk-rwd2/blob/main/sdk/TnkRwdSdk2.v5.83.zip)]**
 
 ### 2.2.2 라이브러리 등록
 
