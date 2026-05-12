@@ -91,6 +91,7 @@ function App(): React.JSX.Element {
               onPress={() => {
                 const {ReactWrapperModule} = NativeModules;
                 console.log(ReactWrapperModule);
+//                 ReactWrapperModule.setUiCustom(); // 아이콘 대신 재화명 사용시 주석 처리 해제
                 ReactWrapperModule.setUserName('rn_test');
                 ReactWrapperModule.setCoppa(0);
                 ReactWrapperModule.showOfferwallWithAtt();

@@ -158,4 +158,10 @@ import TnkRwdSdk2
   override func supportedEvents() -> [String]! {
     return [Self.changeEvent]
   }
+  @objc func setUiCustom() {
+    TnkStyles.shared.adListItem.pointIconImage.imageNormal = nil
+    TnkStyles.shared.adListItem.pointIconImage.imageHighlighted = nil
+    TnkStyles.shared.adListItem.pointIconImage.imageDisabled = nil
+    TnkStyles.shared.adListItem.pointUnitVisible = true // 포인트 명칭 표시
+  }
 }

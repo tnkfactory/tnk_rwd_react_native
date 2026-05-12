@@ -22,4 +22,5 @@ RCT_EXTERN_METHOD(setUserName:(NSString *) userName)
 RCT_EXTERN_METHOD(setCoppa:(int) coppa)
 RCT_EXTERN_METHOD(showOfferwallWithAtt)
 RCT_EXTERN_METHOD(showOfferwall)
+RCT_EXTERN_METHOD(setUiCustom)
 @end

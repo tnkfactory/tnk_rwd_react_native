@@ -9,7 +9,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.tnkfactory.ad.TnkOfferwall
 import com.tnkfactory.ad.TnkSession
-
+import com.tnkfactory.ad.TnkAdConfig
 class ReactWrapperModule internal constructor(private val reactContext: ReactApplicationContext) :
     ReactContextBaseJavaModule(reactContext) {
 
@@ -53,5 +53,10 @@ class ReactWrapperModule internal constructor(private val reactContext: ReactApp
         TnkSession.runOnMainThread {
             offerwall.startOfferwallActivity(reactContext.currentActivity as ReactActivity)
         }
+    }
+
+    @ReactMethod
+    fun setUiCustom() {
+        TnkAdConfig.usePointUnit = true
     }
 }
